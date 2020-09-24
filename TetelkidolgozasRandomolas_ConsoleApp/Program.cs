@@ -17,13 +17,13 @@ namespace TetelkidolgozasRandomolas_ConsoleApp
             nameArray[3] = "Cseh Judit";
             nameArray[4] = "Molnár Patrik";
             nameArray[5] = "Glück Gábor";
-
+            
             Array.Sort(nameArray);
 
             //Tételtömb létrehozása
-            int[] questionSetArray = new int[60];
+            int[] questionSetArray = new int[20];
 
-            for (int i = 0; i <= 59; i++)
+            for (int i = 0; i <= 19; i++)
             {
                 questionSetArray[i] = i + 1;
             }
@@ -34,38 +34,38 @@ namespace TetelkidolgozasRandomolas_ConsoleApp
 
             
             //Tételtömb egy adott embernél létrehozása
-            int[] questionSetArrayAtPerson1 = new int[10];
-            int[] questionSetArrayAtPerson2 = new int[10];
-            int[] questionSetArrayAtPerson3 = new int[10];
-            int[] questionSetArrayAtPerson4 = new int[10];
-            int[] questionSetArrayAtPerson5 = new int[10];
-            int[] questionSetArrayAtPerson6 = new int[10];
+            int[] questionSetArrayAtPerson1 = new int[3];
+            int[] questionSetArrayAtPerson2 = new int[3];
+            int[] questionSetArrayAtPerson3 = new int[3];
+            int[] questionSetArrayAtPerson4 = new int[3];
+            int[] questionSetArrayAtPerson5 = new int[4];
+            int[] questionSetArrayAtPerson6 = new int[4];
 
             for (int i = 0; i < questionSetArray.Length; i++)
             {
-                if (i <= 9)
+                if (i <= 2)
                 {
                     questionSetArrayAtPerson1[i] = questionSetArray[i];
                 }
-                else if (i <= 19)
+                else if (i <= 5)
                 {
-                    questionSetArrayAtPerson2[i - 10] = questionSetArray[i];
+                    questionSetArrayAtPerson2[i - 3] = questionSetArray[i];
                 }
-                else if (i <= 29)
+                else if (i <= 8)
                 {
-                    questionSetArrayAtPerson3[i - 20] = questionSetArray[i];
+                    questionSetArrayAtPerson3[i - 6] = questionSetArray[i];
                 }
-                else if (i <= 39)
+                else if (i <= 11)
                 {
-                    questionSetArrayAtPerson4[i - 30] = questionSetArray[i];
+                    questionSetArrayAtPerson4[i - 9] = questionSetArray[i];
                 }
-                else if (i <= 49)
+                else if (i <= 15)
                 {
-                    questionSetArrayAtPerson5[i - 40] = questionSetArray[i];                    
+                    questionSetArrayAtPerson5[i - 12] = questionSetArray[i];                    
                 }
-                else if (i <= 59)
+                else
                 {
-                    questionSetArrayAtPerson6[i - 50] = questionSetArray[i];
+                    questionSetArrayAtPerson6[i - 16] = questionSetArray[i];
                 }
             }
 
